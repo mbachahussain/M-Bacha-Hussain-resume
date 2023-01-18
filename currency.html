@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/660feba94e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Muhammad Bacha Hussain CV | Currency Converter</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <!-- <img src="./images/logo.svg" class="nav-logo" alt="" /> -->
+          <h3 class="logo">M Bacha<span>.</span></h3>
+          <button class="nav-btn" id="nav-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- nav links -->
+        <ul class="nav-links">
+          <li><a href="index.html">home</a></li>
+          <li><a href="academic.html">academics</a></li>
+          <li><a href="professional.html">professional</a></li>
+          <li><a href="portfolio.html">portfolio</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <button id="close-btn" class="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="sidebar-links">
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">academics</a></li>
+          <li><a href="about.html">professional</a></li>
+          <li><a href="portfolio.html">portfolio</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+        <ul class="social-icons">
+          <!-- single item -->
+          <li>
+            <a href="" class="social-icon">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <!-- end of single item -->
+          <!-- single item -->
+          <li>
+            <a href="" class="social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <!-- end of single item -->
+          <!-- single item -->
+          <li>
+            <a href="" class="social-icon">
+              <i class="fab fa-squarespace"></i>
+            </a>
+          </li>
+          <!-- end of single item -->
+        </ul>
+      </div>
+    </aside>
+    <!-- end of sidebar -->
+    <section class="section apps">
+      <div class="currency-converter">
+        <h2>Currency Converter</h2>
+
+        <div class="app-control">
+          <label for="frmcountry">From country:</label>
+          <select
+            id="frmcountry"
+            name="frmcountry"
+            onchange="SetInputValue(this.value)"
+          ></select>
+        </div>
+        <div class="app-control">
+          <label for="tocountry">To country:</label>
+          <select
+            id="tocountry"
+            name="tocountry"
+            onchange="SetInputValue2(this.value)"
+          ></select>
+        </div>
+        <div class="app-control">
+          <div>
+            <label for="curExcRate">Current Exchange Rate:</label>
+            <span id="curExcRate"></span>
+          </div>
+          <div>
+            <label for="datetime">Conversion Timestamp:</label>
+            <span id="datetime"></span>
+          </div>
+        </div>
+        <div class="app-control">
+          <label for="amount">Amount of Transaction:</label>
+          <input type="text" id="amount" name="amount" />
+          <div>
+            <label for="totamount">Total Amount:</label>
+            <span id="totamount"></span>
+          </div>
+        </div>
+        <button type="button" id="loadData" class="btn">Convert Now</button>
+        <div id="msgalert" class="overlay">
+          <div class="alert">
+            <h2 id="msg"></h2>
+          </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+      <ul class="social-icons">
+        <!-- single item -->
+        <li>
+          <a href="" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <!-- end of single item -->
+        <!-- single item -->
+        <li>
+          <a href="" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <!-- end of single item -->
+        <!-- single item -->
+        <li>
+          <a href="" class="social-icon">
+            <i class="fab fa-squarespace"></i>
+          </a>
+        </li>
+        <!-- end of single item -->
+        <!-- single item -->
+        <li>
+          <a href="" class="social-icon">
+            <i class="fab fa-behance"></i>
+          </a>
+        </li>
+        <!-- end of single item -->
+        <!-- single item -->
+        <li>
+          <a href="" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <!-- end of single item -->
+      </ul>
+
+      <p>&copy; <span id="date"></span> M Bacha. All rights reserved.</p>
+    </footer>
+    <script src="/scripts/layout.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
+
+<!-- 
+
+       -->
