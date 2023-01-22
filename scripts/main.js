@@ -60,7 +60,7 @@ function conversion(responseText) {
   let tocountryt = document.getElementById("tocountry").value;
   let amount = document.getElementById("amount").value;
   var numbers = isNumber(amount)
-  if(!numbers || amount==0 ){
+  if(!numbers || amount<=0 ){
     document.getElementById("msg").innerHTML =
     "Enter valid value";
   document.getElementById("msgalert").style.visibility = "visible";
