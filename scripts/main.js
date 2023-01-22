@@ -59,7 +59,7 @@ function conversion(responseText) {
   let frmcountry = document.getElementById("frmcountry").value;
   let tocountryt = document.getElementById("tocountry").value;
   let amount = document.getElementById("amount").value;
-  var numbers = isNumber(nn)
+  var numbers = isNumber(amount)
   if(!numbers || amount==0 ){
     document.getElementById("msg").innerHTML =
     "Enter valid value";
