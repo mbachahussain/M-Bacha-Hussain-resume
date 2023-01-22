@@ -9,7 +9,7 @@ function LoadData() {
   //console.log("LOAD DATA CALLED");
   let frmcountry = document.getElementById("frmcountry").value;
   let tocountry = document.getElementById("tocountry").value;
-  let url = "http://www.floatrates.com/daily/" + frmcountry + ".json";
+  let url = "https://www.floatrates.com/daily/" + frmcountry + ".json";
   fetch(url)
     .then(function (response) {
       return response.json();
