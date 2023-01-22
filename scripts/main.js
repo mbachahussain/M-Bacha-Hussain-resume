@@ -59,9 +59,10 @@ function conversion(responseText) {
   let frmcountry = document.getElementById("frmcountry").value;
   let tocountryt = document.getElementById("tocountry").value;
   let amount = document.getElementById("amount").value;
-  if(amount==0){
+  var numbers = isNumber(nn)
+  if(!numbers || amount==0 ){
     document.getElementById("msg").innerHTML =
-    "Enter Value Greater than 0";
+    "Enter valid value";
   document.getElementById("msgalert").style.visibility = "visible";
   document.getElementById("msgalert").style.opacity = 1;
   }else{
@@ -79,6 +80,9 @@ function conversion(responseText) {
   document.getElementById("totamount").innerHTML =
     amount + " " + frmcountry + " = " + totamount.toFixed(2) + " " + tocountryt;
   }
+}
+function isNumber(n) {
+  return !isNaN(parseFloat(n)) && isFinite(n);
 }
 // Get and print date in UK format
 function getUKdatetime() {
