@@ -107,9 +107,11 @@ function getUKdatetime() {
 
 function SetInputValue(selectedValue) {
   frmcountry.value = selectedValue;
+  LoadData();
 }
 function SetInputValue2(selectedValue) {
   tocountry.value = selectedValue;
+  LoadData();
 }
 
 // Load automatically
